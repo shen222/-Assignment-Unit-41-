@@ -1,107 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    font-size: 20px;
+  }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: black;
-}
-
-li, a,button {
-    font-family: -apple-system, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: blanchedalmond;
-    text-decoration: none;
-}
-
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
-}
-
-.logo {
-    cursor: pointer;
-}
-
-.nav__links{
+.collapse {
     list-style: none;
+    font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.nav__links li {
+.collapse{
     display: inline-block;
     padding: 0px 20px;
 }
 
-.nav__links li a {
+.collapse{
     transition: all 0.3s ease 0s;
 }
 
-.nav__links li a:hover {
-    color: #0088a9;
+.collapse :hover {
+    color:white;
 }
 
-button{
-    padding:9px 25px;
-    background-color: rgba(0,136,169,1);
-    border: none;
+img.rounded-corners {
     border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-
-button:hover{
-    background-color: rgba(0,136,169,0.8);
-}
-
-.banner{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    font-family: -apple-system,Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.banner h1{
-    position: absolute;
-    top: 25%;
-    left: 35%;
-    transform: translate(-50%);
-    color: #fff;
-    font-size: 60px;
-    margin: 0;
-    animation: animate 1s ease forwards;
-    animation-delay: 1s;
-    opacity: 0;
-
-}
-.banner h1 span{
-    color:darkorange;
-}
-
-.banner h2{
-    position: absolute;
-    top: 38%;
-    left: 15%;
-    margin: 0%;
-    padding: 0%;
-    color: #ddd;
-    font-size: 18px;
-    width: 50%;
-    line-height: 30px;
-}
-
-@keyframes animate{
-    0%{
-        top:30%;
-        opacity: 0;
-    }
-    70%{
-        opacity: 0.3
-    }
-    100%{
-        opacity: 25%;
-    }
-}
+  }
+  
+  img{
+      padding: 25px 25px;
+  }
