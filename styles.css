@@ -3,6 +3,16 @@ body{
     font-size: 20px;
   }
 
+body::before{
+    display: block;
+    content: '';
+    height: 100px;
+}
+
+.container h1{
+    font-size: 90px;
+}
+
 .collapse {
     list-style: none;
     font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -22,9 +32,10 @@ body{
 }
 
 img.rounded-corners {
-    border-radius: 50px;
+    border-radius: 30px;
   }
   
-  img{
+img{
       padding: 25px 25px;
   }
+
