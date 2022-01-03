@@ -12,7 +12,7 @@ body{
   }
 
 nav {
-      background: purple;
+      background: rgb(240, 211, 51);
       height: 80px;
       width: 100%;
   }
@@ -82,7 +82,7 @@ a.active,a:hover{
        position: fixed;
        width: 100%;
        height: 100vh;
-       background: rgb(122, 38, 122);
+       background: rgb(240, 211, 51);
        top: 80px;
        left: -100%;
        text-align: center;
@@ -114,9 +114,8 @@ a.active,a:hover{
 
 .showcase {
     height: 400px;
-    background-color: purple;
-    color: white;
-    
+    color: black;
+
 }
 
 .showcase h1{
@@ -127,3 +126,34 @@ a.active,a:hover{
 .showcase p{
     margin: 20px 0;
 }
+
+.fas{
+    color: black;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    border-radius: 30px;
+  }
+
+  .grid{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+
+  }
+
+  .card {
+      background-color: white;
+      color: black;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px black;
+      padding: 20px;
+      margin: 10px;
+  }
