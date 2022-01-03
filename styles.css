@@ -13,8 +13,9 @@ body::before{
     font-size: 90px;
 }
 
-.collapse {
+.collapse ul li a{
     list-style: none;
+    text-decoration: none;
     font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
