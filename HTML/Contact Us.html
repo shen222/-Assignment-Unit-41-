@@ -39,3 +39,52 @@
                 </ul>
          </div>
     </nav>
+
+    <div class="container">
+        <form id="form" action="/">
+            <h1 style="font-size: 40px;">Contact Us</h1>
+            <div class="input-control">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Password</label>
+                <input id="password"name="password" type="password">
+                <div class="error"></div>
+            </div>
+            
+            <form name="form1" id="form1" action="/action_page.php">
+                Subjects: <select name="subject" id="subject">
+                  <option value="" selected="selected">Select subject</option>
+                </select>
+                <br><br>
+               Regarding: <select name="topic" id="topic">
+                  <option value="" selected="selected">Courses</option>
+                  <option value="frontDesk" selected>Payment</option>
+                  <option value="frontDesk" selected>Student</option>
+                </select>
+                <br><br>
+                Chapters: <select name="chapter" id="chapter">
+                  <option value="" selected="selected">Please select topic first</option>
+                </select>
+                <br><br>
+                <button type="submit" class="btn btn-primary submit-btn">Submit</button>
+              </form>
+        </form>
+    </div>
+    <script src="/JS/index.js"></script>
+
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2021 Web app Development Assignment</p>
+        </div>
+          </footer>
+          
+</body>
+</html>
