@@ -18,7 +18,7 @@
   <div class="container">
       <nav class="navbar navbar-expand-lg stroke px-0">
           <h1> <a class="navbar-brand" href="index.html">
-              <img src="assets/images/amdt_logo_2.png" alt="burger logo"width="150px" /> AMDT
+              <img src="assets/images/amdt_logo_2.png" alt="amdt_logo_2.png"width="180px" /> AMDT
               </a></h1>
           <!-- if logo is image enable this   
   <a class="navbar-brand" href="#index.html">
@@ -33,7 +33,7 @@
 
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul class="navbar-nav ml-auto">
-                  <li class="nav-item active">
+                  <li class="nav-item @@home__active">
                       <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item @@about__active">
@@ -45,7 +45,7 @@
                   <li class="nav-item @@menu__active">
                       <a class="nav-link" href="menu.html">Portfolio</a>
                   </li>
-                  <li class="nav-item @@contact__active">
+                  <li class="nav-item active">
                       <a class="nav-link" href="contact.html">Contact</a>
                   </li>
                   <!--/search-right-->
@@ -88,192 +88,61 @@
   </div>
 </header>
 <!--/header-->
-<div class="popup-screen">
-  <div class="popup-box">
-      <i class="close-btn">&#9746</i>
-      <h2>WELCOME TO OUR WEB</h2>
-     <a href="#" class="btn">AMDT</a>
-
-
-
-  </div>
-</div>
-
-<script type="text/javascript">
-const popupScreen = document.querySelector(".popup-screen")
-const popupBox = document.querySelector(".popup-box")
-const closeBtn = document.querySelector(".close-btn")
-
-window.addEventListener("load", () => {
-  setTimeout(() => {
-      popupScreen.classList.add("active");
-  }, 2000);
-});
-closeBtn.addEventListener("click", () =>{
-  popupScreen.classList.remove("active");
-});
-</script>
-<!-- banner section -->
-<section id="home" class="w3l-banner py-5">
-    <div class="container py-lg-5 py-md-4 mt-lg-0 mt-md-5 mt-4">
-        <div class="row align-items-center py-lg-5 py-4 mt-4">
-            <div class="col-lg-6 col-sm-12">
-                <h3 class="">Your Future to
-                     </h3>
-                <h2 class="mb-4">Creativity Starts Here</h2>
-                <p> Lorem ipsum dolor sit amet elit. Provident.
-                    fugit odit? Fugit ipsam. Sed ac ex. Nam mauris velit, ac
-                    cursus quis, leo.</p>
-                <div class="mt-md-5 mt-4">
-                    <a class="btn btn-primary btn-style mr-2" href="menu.html"> Portfolio</a>
-                    <a class="btn btn-outline-primary btn-style" href="contact.html"> Contact Us </a>
-                </div>
-            </div>
-            <div class="col-lg-5">
-            </div>
+<section class="w3l-about-breadcrumb">
+    <div class="breadcrumb-bg breadcrumb-bg-about py-5">
+        <div class="container py-lg-5 py-md-3">
+            <h2 class="title">Contact Us</h2>
         </div>
     </div>
 </section>
-<!-- //banner section -->
-<section class="w3l-index3" id="work">
-    <div class="midd-w3 py-5">
-        <div class="container py-lg-5 py-md-4 py-2">
-            <div class="row">
-                <div class="col-lg-6 left-wthree-img text-righ">
-                    <div class="position-relative">
-                        <img src="assets/images/amdtlogo1.png" alt="" class="img-fluid radius-image-full">
-                        <a href="#small-dialog" class="popup-with-zoom-anim play-view text-center position-absolute">
-                            <span class="video-play-icon">
-                                <span class="fa fa-play"></span>
-                            </span>
-                        </a>
-                        <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
-                        <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
-                            <iframe src="https://www.youtube.com/embed/dCVEY88Fn1k" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 mt-lg-0 mt-md-5 mt-4 about-right-faq align-self">
-                    <h5 class="title-small mb-1">Our story</h5>
-                    <h3 class="title-big">Creative Career  <span>Courses</span></h3>
-                    <p class="mt-sm-4 mt-3">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
-                        ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Non quae, consequatur voluptatem ad.</p>
-                    <a class="btn btn-primary btn-style mt-md-5 mt-4 mr-2" href="about.html"> Read More </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-<!-- /mobile section --->
-<section class="w3l-mobile-content-6 py-5">
-    <div class="mobile-info py-lg-5 py-md-4 py-2">
-        <!-- /mobile-info-->
+<!-- contacts -->
+<section class="w3l-contact-7 py-5" id="contact">
+    <div class="contacts-9 py-lg-5 py-md-4">
         <div class="container">
-            <div class="row mobile-info-inn mx-lg-0">
-                <div class="col-lg-4 mobile-right">
-                    <div class="row mobile-right-grids mb-lg-5 mb-4">
-                        <div class="col-2 mobile-right-icon">
-                            <div class="mobile-icon">
-                                <span class="fa fa-leaf"></span>
+            <div class="top-map">
+                <div class="row map-content-9">
+                    <div class="col-lg-8">
+                        <h3 class="title-big">Get in touch with us</h3>
+                        <p class="mb-4 mt-lg-0 mt-2">Your email address will not be published. Required fields are marked *</p>
+                        <form action="#" method="post" class="text-right">
+                            <div class="form-grid">
+                                <input type="text" name="w3lName" id="w3lName" placeholder="Name*" required="">
+                                <input type="email" name="w3lSender" id="w3lSender" placeholder="Email*" required="">
+                                <input type="text" name="w3lPhone" id="w3lPhone" placeholder="Phone number*"
+                                    required="">
+                                <input type="text" name="w3lSubject" id="w3lSubject" placeholder="Subject">
                             </div>
-                        </div>
-                        <div class="col-10 mobile-right-info">
-                            <h6><a href="#url">Fashion Design</a></h6>
-                            <p>Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consec
-                                adipisicing elit.</p>
-                        </div>
+                            <textarea name="w3lMessage" id="w3lMessage" placeholder="Message"></textarea>
+                            <button type="submit" class="btn btn-primary btn-style mt-3">Submit</button>
+                        </form>
                     </div>
-                    <div class="row mobile-right-grids mb-lg-5 mb-4">
-                        <div class="col-2 mobile-right-icon">
-                            <div class="mobile-icon">
-                                <span class="fa fa-shopping-basket"></span>
-                            </div>
-                        </div>
-                        <div class="col-10 mobile-right-info">
-                            <h6><a href="#url"> Animation and VFX</a></h6>
-                            <p>Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consec
-                                adipisicing elit.</p>
-                        </div>
-                    </div>
-                    <div class="row mobile-right-grids">
-                        <div class="col-2 mobile-right-icon">
-                            <div class="mobile-icon">
-                                <span class="fa fa-users"></span>
-                            </div>
-                        </div>
-                        <div class="col-10 mobile-right-info">
-                            <h6><a href="#url">Grafic Design</a></h6>
-                            <p>Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consec
-                                adipisicing elit.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mobile-left">
-                    <img src="assets/images/amdtlogo1.png" class="img-fluid radius-image" alt="">
-                </div>
-                <div class="col-lg-4 mobile-right">
-                    <div class="row mobile-right-grids mb-lg-5 mb-4">
-                        <div class="col-2 mobile-right-icon">
-                            <div class="mobile-icon">
-                                <span class="fa fa-cogs"></span>
-                            </div>
-                        </div>
-                        <div class="col-10 mobile-right-info">
-                            <h6><a href="#url">Photoshop</a></h6>
-                            <p>Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consec
-                                adipisicing elit.</p>
-                        </div>
-                    </div>
-                    <div class="row mobile-right-grids mb-lg-5 mb-4">
-                        <div class="col-2 mobile-right-icon">
-                            <div class="mobile-icon">
-                                <span class="fa fa-motorcycle"></span>
-                            </div>
-                        </div>
-                        <div class="col-10 mobile-right-info">
-                            <h6><a href="#url">UX Design</a></h6>
-                            <p>Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consec
-                                adipisicing elit.</p>
-                        </div>
-                    </div>
-                    <div class="row mobile-right-grids">
-                        <div class="col-2 mobile-right-icon">
-                            <div class="mobile-icon">
-                                <span class="fa fa-thumbs-down"></span>
-                            </div>
-                        </div>
-                        <div class="col-10 mobile-right-info">
-                            <h6><a href="#url">Interior Design</a></h6>
-                            <p>Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consec
-                                adipisicing elit.</p>
-                        </div>
-                    </div>
-                </div>
+                    <div class="col-lg-4 cont-details">
+                        <address>
+                            <h5 class="mt-md-5 mt-4">Contact Address</h5>
+                            <p><span class="fa fa-map-marker"></span>208 Trainer Avenue street, Corner
+                                Market, NY - 62617. </p>
+                            <p> <a href="mailto:info@example.com"><span
+                                        class="fa fa-envelope"></span>info@example.com</a></p>
+                            <p><span class="fa fa-phone"></span><a href="tel:+12 5348943649"> +12 534894364</a></p>
 
+                            <h5 class="mt-4 mb-3">Opening Hours</h5>
+                            <div class="hours">
+                                <p><span class="fa fa-clock-o"></span>10:00am - 09:00pm</p>
+                                <p>Sunday Closed</p>
+                            </div>
+                        </address>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- //mobile-info-->
     </div>
 </section>
-<!-- //mobile section --->
-<!-- middle -->
-<div class="middle py-5" id="call">
-    <div class="container py-lg-3">
-        <div class="welcome-left text-center py-md-5 py-3">
-            <h3>Creativity Starts Herer</h3>
-            <h3 class="mt-4">Call us : <a href="tel:+1 123 456 789">+1 123 456 789</a> </h3>
-            <a href="contact.html" class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2">Contact Us</a>
-            <a href="#book" class="btn btn-style btn-outline-primary mt-sm-5 mt-4">Book a table</a>
-        </div>
-    </div>
+<!-- //contacts -->
+<div class="map">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2895687731!2d-74.26055986835598!3d40.697668402590374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1562582305883!5m2!1sen!2sin"
+        frameborder="0" style="border:0" allowfullscreen=""></iframe>
 </div>
-<!-- //middle -->
-
-
 <!-- footer -->
 <footer class="py-5">
   <div class="container py-xl-4">
@@ -282,13 +151,11 @@ closeBtn.addEventListener("click", () =>{
         <!-- logo -->
         <h2>
           <a class="logo text-wh" href="index.html">
-            <img src="assets/images/burger.png" alt="amdt_logo_2.png" width="180px" /> AMDT
+            <img src="assets/images/burger.png" alt="burger logo" width="35px" /> AMDT
           </a>
         </h2>
         <!-- //logo -->
-        <p class="mt-lg-4 mt-3 mb-4 pb-lg-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae,
-           sequi reprehenderit suscipit et a iusto odit eligendi error corporis consequatur quidem, 
-           dolore quas voluptatem nobis dolores officia, debitis minus neque!</p>
+        <p class="mt-lg-4 mt-3 mb-4 pb-lg-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem perspiciatis autem, porro quaerat cumque numquam libero dicta maxime labore nemo nisi consequuntur provident vel. Fugiat sint rerum asperiores. Tempore, fugit!.</p>
         <!-- social icons -->
         <ul class="top-right-info">
           <li>
