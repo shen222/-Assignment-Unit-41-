@@ -11,6 +11,24 @@
 
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
+    <style type="text/css">
+      
+      table
+      {
+          border: 3px solid rgb(82, 151, 207);
+      }
+      table th
+      {
+          background-color: #27258f;
+          color: #333;
+          font-weight: bold;
+      }
+      table th, table td
+      {
+          padding: 10px;
+          border-color: rgb(17, 16, 16);
+      }
+  </style>
   </head>
   <body>
 <!--header-->
@@ -104,17 +122,192 @@
                     <div class="col-lg-8">
                         <h3 class="title-big">Get in touch with us</h3>
                         <p class="mb-4 mt-lg-0 mt-2">Your email address will not be published. Required fields are marked *</p>
-                        <form action="#" method="post" class="text-right">
-                            <div class="form-grid">
-                                <input type="text" name="w3lName" id="w3lName" placeholder="Name*" required="">
-                                <input type="email" name="w3lSender" id="w3lSender" placeholder="Email*" required="">
-                                <input type="text" name="w3lPhone" id="w3lPhone" placeholder="Phone number*"
-                                    required="">
-                                <input type="text" name="w3lSubject" id="w3lSubject" placeholder="Subject">
-                            </div>
-                            <textarea name="w3lMessage" id="w3lMessage" placeholder="Message"></textarea>
-                            <button type="submit" class="btn btn-primary btn-style mt-3">Submit</button>
-                        </form>
+
+                        <form action = "#" name = "myForm" onsubmit = "return(validate());">
+                        <table border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                              <td>
+                                  First Name:&nbsp;
+                              </td>
+                              <td>
+                                  <input type="text" name = "FName" id="txtFirstName" value="" placeholder="Name*" required=""/>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  Last Name:&nbsp;
+                              </td>
+                              <td>
+                                  <input type="text" name = "LName"id="txtLastName" value="" placeholder="Last name*" required=""/>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  Subject:&nbsp;
+                              </td>
+                              <td>
+                                  <input type="text" name = "Subject"id="subject" value=""placeholder="Subject*" required="" />
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  Email:&nbsp;
+                              </td>
+                              <td>
+                                  <input type="text" name = "Email"id="email" value="" placeholder="Email*" required="" />
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  Phone:&nbsp;
+                              </td>
+                              <td>
+                                  <input type="text" name = "Phone" id="phone" value=""placeholder="Phone*" required="" />
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  <input type="button" value="Open Popup" onclick="OpenPopup()" />
+                              </td>
+                              <td>
+                                  <input type="button" value="Send" onclick="SendToPopup()" />
+                              </td>
+                          </tr>
+                          <tr>
+                            <td align = "center"></td>
+                            <td><input type = "submit" value = "Submit" /></td>
+                         </tr>
+                      </table>
+                    </form>
+
+                	<script>
+			function GEEKFORGEEKS() {
+				var name =
+					document.forms["RegForm"]["Name"];
+				var email =
+					document.forms["RegForm"]["EMail"];
+				var phone =
+					document.forms["RegForm"]["Telephone"];
+				var what =
+					document.forms["RegForm"]["Subject"];
+				var password =
+					document.forms["RegForm"]["Password"];
+				var address =
+					document.forms["RegForm"]["Address"];
+
+				if (name.value == "") {
+					window.alert("Please enter your name.");
+					name.focus();
+					return false;
+				}
+
+				if (address.value == "") {
+					window.alert("Please enter your address.");
+					address.focus();
+					return false;
+				}
+
+				if (email.value == "") {
+					window.alert(
+					"Please enter a valid e-mail address.");
+					email.focus();
+					return false;
+				}
+
+				if (phone.value == "") {
+					window.alert(
+					"Please enter your telephone number.");
+					phone.focus();
+					return false;
+				}
+
+				if (password.value == "") {
+					window.alert("Please enter your password");
+					password.focus();
+					return false;
+				}
+
+				if (what.selectedIndex < 1) {
+					alert("Please enter your course.");
+					what.focus();
+					return false;
+				}
+
+				return true;
+			}
+		</script>
+
+		
+	</head>
+
+	<body>
+		<h1 style="text-align: center;">REGISTRATION FORM</h1>
+		<form name="RegForm" action="#"
+			onsubmit="return GEEKFORGEEKS()" method="post">
+			<p>Name: <input type="text"
+							size="65" name="Name" /></p>
+			<br />
+			<p>Address: <input type="text"
+							size="65" name="Address" />
+		</p>
+			<br />
+			<p>E-mail Address: <input type="text"
+							size="65" name="EMail" /></p>
+			<br />
+			<p>Password: <input type="text"
+						size="65" name="Password" /></p>
+			<br />
+			<p>Telephone: <input type="text"
+						size="65" name="Telephone" /></p>
+			<br />
+
+			<p>
+				SELECT YOUR COURSE
+				<select type="text" value="" name="Subject">
+					<option>BTECH</option>
+					<option>BBA</option>
+					<option>BCA</option>
+					<option>B.COM</option>
+					<option>GEEKFORGEEKS</option>
+				</select>
+			</p>
+			<br />
+			<br />
+			
+				<input type="submit"
+					value="send" name="Submit" />
+				<input type="reset"
+					value="Reset" name="Reset" />
+			</p>
+		</form>
+
+
+                      <script type="text/javascript">
+                          var popup;
+                          function OpenPopup() {
+                              popup = window.open("Popup.html", "Popup", "width=300,height=300,display=center" );
+                          };
+                          function SendToPopup() {
+                              if (popup != null && !popup.closed) {
+                                  var lblFirstName = popup.document.getElementById("lblFirstName");
+                                  var lblLastName = popup.document.getElementById("lblLastName");
+                                  var subject = popup.document.getElementById("subject");
+                                  var email = popup.document.getElementById("email");
+                                  var phone = popup.document.getElementById("phone");
+                                  lblFirstName.innerHTML = document.getElementById("txtFirstName").value;
+                                  lblLastName.innerHTML = document.getElementById("txtLastName").value;
+                                  subject.innerHTML = document.getElementById("subject").value;
+                                  email.innerHTML = document.getElementById("email").value;
+                                  phone.innerHTML = document.getElementById("phone").value;
+                                  popup.focus();
+                              } else {
+                                  alert("Data Updated clearly!!!" 
+                                  );
+                              }
+                          }
+                      </script>
+                      
+
                     </div>
                     <div class="col-lg-4 cont-details">
                         <address>
@@ -138,11 +331,7 @@
     </div>
 </section>
 <!-- //contacts -->
-<div class="map">
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2895687731!2d-74.26055986835598!3d40.697668402590374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1562582305883!5m2!1sen!2sin"
-        frameborder="0" style="border:0" allowfullscreen=""></iframe>
-</div>
+
 <!-- footer -->
 <footer class="py-5">
   <div class="container py-xl-4">
@@ -189,8 +378,7 @@
           <h3>Contact Us</h3>
         </div>
         <div class="footer-text mt-4">
-          <p><strong>Address :</strong>  208 Trainer Avenue street, Corner
-            Market, NY - 62617.</p>
+          <p><strong>Address :</strong> 317A Galle Rd, Colombo 00400</p>
           <p class="my-2"><strong>Phone :</strong> <a href="tel:+12 534894364">+12 534894364</a></p>
           <p><strong>Email :</strong> <a href="mailto:info@example.com">info@example.com</a></p>
         </div>
