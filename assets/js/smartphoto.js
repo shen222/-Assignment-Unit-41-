@@ -121,24 +121,6 @@ var aTemplate = function () {
       this.templates.push(id);
     }
 
-    // loadHtml() {
-    //   const templates = this.templates;
-    //   const promises = [];
-    //   templates.forEach((template) => {
-    //     const d = new $.Deferred();
-    //     promises.push(d);
-    //     const src = selector(`#${template}`).getAttribute('src');
-    //     $.ajax({
-    //       url: src,
-    //       type: 'GET',
-    //       dataType: 'text'
-    //     }).success((data) => {
-    //       selector(`#${template}`).innerHTML = data;
-    //       d.resolve();
-    //     });
-    //   });
-    //   return $.when(...promises);
-    // }
 
   }, {
     key: 'getData',
