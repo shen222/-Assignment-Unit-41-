@@ -3,3 +3,4 @@ https://www.youtube.com/watch?v=3Qr6-WHtIRc&t=1s - color switcher
 https://youtu.be/pQr4O1OITJo - quiz js
 https://www.aspsnippets.com/Articles/Pass-Send-value-from-Parent-page-window-to-Child-popup-window-using-JavaScript.aspx
 https://www.jqueryscript.net/gallery/Responsive-Mobile-first-Image-Viewer-jQuery-SmartPhoto.html
+https://www.youtube.com/watch?v=xodD0nw2veQ - dark mode button 
